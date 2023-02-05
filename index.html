@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recréer Angular</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
 </head>
 <body>
     <div class="container">
@@ -12,10 +13,11 @@
             <header>
                 <h1>Recréer Angular</h1>
             </header>
+            <input type="text" placeholder="Numéro de mobile" id="mobile-number" phone-number with-spaces="false" border-color="blue">
+            <input type="text" placeholder="Numéro de fixe" id="fixe-number" phone-number>
+            <input type="text" placeholder="Numéro de carte bleue" id="card-number" credit-card>
         </article>
-        <input type="text" placeholder="Numéro de mobile" id="mobile-number">
-        <input type="text" placeholder="Numéro de fixe" id="fixe-number">
-        <input type="text" placeholder="Numéro de télécopie" id="fax-number">
     </div>
+    <script src="src/app.ts" type="module"></script>
 </body>
 </html>
